@@ -1,0 +1,18 @@
+{
+  "name": "com.skytek.qdevicewatcher",
+  "author": {
+    "name": "Milos Zrilic",
+    "email": "miloszrilic@gmail.com"
+  },
+  "repository": {
+    "type": "GIT",
+    "url": "https://github.com/miloszrilic/qdevicewatcher.git"
+  },
+  "version": {
+    "label": "1.0.0"
+  },
+  "dependencies": [
+  ],
+  "license": "UNLICENSE",
+  "priFilename": "qsdevicewatcher.pri"
+}
