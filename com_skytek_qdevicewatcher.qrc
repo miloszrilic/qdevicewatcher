@@ -1,6 +1,0 @@
-
-<RCC>
-    <qresource prefix="/com/skytek/qdevicewatcher">
-        <file>qmldir</file>
-    </qresource>
-</RCC>

@@ -1,4 +1,4 @@
-include(src/libQDeviceWatcher.pri)
+include($$PWD/src/libQDeviceWatcher.pri)
 
 RESOURCES += \
-    $$PWD/com_skytek_qdevicewatcher.qrc
+    $$PWD/seq_skytek_qdevicewatcher.qrc
