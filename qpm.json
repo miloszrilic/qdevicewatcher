@@ -1,5 +1,5 @@
 {
-  "name": "seq.skytek.qdevicewatcher",
+  "name": "seq.skytek.qdevicewatch",
   "author": {
     "name": "Milos Zrilic",
     "email": "miloszrilic@gmail.com"
@@ -9,7 +9,7 @@
     "url": "https://github.com/miloszrilic/qdevicewatcher.git"
   },
   "version": {
-    "label": "1.0.0"
+    "label": "1.0.1"
   },
   "dependencies": [
   ],
