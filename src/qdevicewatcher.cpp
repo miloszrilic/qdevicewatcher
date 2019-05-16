@@ -91,6 +91,8 @@ void QDeviceWatcherPrivate::emitDeviceAction(const QString &dev, const QString &
 		emitDeviceRemoved(dev);
 	else if (a == QLatin1String("change"))
 		emitDeviceChanged(dev);
+    else if (a == QLatin1String("bind"))
+        emitDeviceChanged(dev);
 }
 
 

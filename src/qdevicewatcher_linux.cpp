@@ -230,7 +230,7 @@ void QDeviceWatcherPrivate::parseLine(const QByteArray &line)
 #define USE_REGEXP 0
 #if USE_REGEXP
 	QRegExp rx("(\\w+)(?:@/.*/block/.*/)(\\w+)\\W*");
-	//QRegExp rx("(add|remove|change)@/.*/block/.*/(\\w+)\\W*");
+    //QRegExp rx("(add|remove|change|bind)@/.*/block/.*/(\\w+)\\W*");
 	if (rx.indexIn(line) == -1)
 		return;
 	QString action_str = rx.cap(1).toLower();
@@ -252,7 +252,10 @@ void QDeviceWatcherPrivate::parseLine(const QByteArray &line)
 	} else if (action_str==QLatin1String("change")) {
 		emitDeviceChanged(dev);
 		event = new QDeviceChangeEvent(QDeviceChangeEvent::Change, dev);
-	}
+    } else if (action_str==QLatin1String("bind")) {
+        emitDeviceChanged(dev);
+        event = new QDeviceChangeEvent(QDeviceChangeEvent::Change, dev);
+    }
 
 	zDebug("%s %s", qPrintable(action_str), qPrintable(dev));
 
